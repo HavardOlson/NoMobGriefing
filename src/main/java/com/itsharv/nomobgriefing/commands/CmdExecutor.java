@@ -1,6 +1,6 @@
 package com.itsharv.nomobgriefing.commands;
 
-import io.github.meonstudios.nomobgriefing.MessageHelper;
+import com.itsharv.nomobgriefing.utils.Messages;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -45,7 +45,7 @@ public class CmdExecutor implements CommandExecutor, TabCompleter {
                 if (this.commands.containsKey(args[0].toLowerCase())) {
                     ((BaseCommand)this.commands.get(args[0])).execute(player, args);
                 } else {
-                    player.sendMessage(MessageHelper.prefix + ChatColor.RED + "This is not a supported command.");
+                    player.sendMessage(Messages.prefix + ChatColor.RED + "This is not a supported command.");
                 }
             }
 
@@ -83,7 +83,7 @@ public class CmdExecutor implements CommandExecutor, TabCompleter {
     }
 
     private void SendInfoToPlayer(Player player) {
-        player.sendMessage(MessageHelper.longPrefixStart);
+        player.sendMessage(Messages.longPrefixStart);
         player.sendMessage(ChatColor.GRAY + "Plugin made by: " + ChatColor.GOLD + "PinkNeonDinosaur");
         player.sendMessage(ChatColor.GRAY + "This plugin can be used to enable/disable griefing " + "done by certain mobs, without having to set the doMobGriefing gamerule to true.");
         player.sendMessage(ChatColor.GRAY + "Below is a list of all commands you can use:");
@@ -97,6 +97,6 @@ public class CmdExecutor implements CommandExecutor, TabCompleter {
             }
         }
 
-        player.sendMessage(MessageHelper.longPrefixEnd);
+        player.sendMessage(Messages.longPrefixEnd);
     }
 }

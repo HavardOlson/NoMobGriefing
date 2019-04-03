@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NoMobGriefing">
+    <output-path>$PROJECT_DIR$/out/artifacts/NoMobGriefing</output-path>
+    <root id="archive" name="NoMobGriefing.jar">
+      <element id="module-output" name="NoMobGriefing" />
+    </root>
+  </artifact>
+</component>

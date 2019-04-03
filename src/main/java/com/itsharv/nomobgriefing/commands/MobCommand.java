@@ -1,6 +1,6 @@
 package com.itsharv.nomobgriefing.commands;
 
-import io.github.meonstudios.nomobgriefing.MessageHelper;
+import com.itsharv.nomobgriefing.utils.Messages;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -23,7 +23,7 @@ public class MobCommand extends BaseCommand {
         if (!super.execute(player, args)) {
             return false;
         } else {
-            String message = MessageHelper.prefix + WordUtils.capitalize(this.name) + " griefing has been ";
+            String message = Messages.prefix + WordUtils.capitalize(this.name) + " griefing has been ";
             if (args[1].equalsIgnoreCase("enable")) {
                 player.sendMessage(message + ChatColor.GREEN + "enabled");
                 this.plugin.getConfig().set("mob." + this.name, true);
