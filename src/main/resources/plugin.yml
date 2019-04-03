@@ -2,6 +2,7 @@ name: NoMobGriefing
 main: com.itsharv.nomobgriefing.NoMobGriefing
 version: 0.1
 author: Harv
+description: NoMobGriefing
 
 commands:
   nmg:
