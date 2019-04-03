@@ -1,0 +1,9 @@
+mob:
+  creeper: true
+  zombie: true
+  enderman: false
+  snowgolem: true
+  ghast: true
+  wither: true
+  enderdragon: true
+  tnt: true
