@@ -1,8 +1,7 @@
 name: NoMobGriefing
 main: com.itsharv.nomobgriefing.NoMobGriefing
-version: 0.1
+version: 1.0
 author: Harv
-description: NoMobGriefing
 
 commands:
   nmg:
@@ -15,7 +14,7 @@ permissions:
     description: Gives acces to all NoMobGriefing commands.
     children:
       nmg.list: true
-      nmg.zombie:true
+      nmg.zombie: true
       nmg.creeper: true
       nmg.enderman: true
       nmg.ghast: true

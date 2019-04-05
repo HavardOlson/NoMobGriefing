@@ -12,7 +12,7 @@ public class Messages {
 
     static {
         prefix = ChatColor.YELLOW + "[" + ChatColor.WHITE + ChatColor.BOLD + "No Mob Griefing" + ChatColor.RESET + ChatColor.YELLOW + "] " + ChatColor.GRAY;
-        longPrefixStart = ChatColor.YELLOW + "}----------[ " + ChatColor.WHITE + ChatColor.BOLD + "No Mob Griefing" + ChatColor.RESET + ChatColor.YELLOW + " ]----------{";
-        longPrefixEnd = ChatColor.YELLOW + "}--------------------------------------{";
+        longPrefixStart = null;
+        longPrefixEnd = null;
     }
 }

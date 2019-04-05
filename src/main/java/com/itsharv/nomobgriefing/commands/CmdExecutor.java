@@ -20,6 +20,7 @@ public class CmdExecutor implements CommandExecutor, TabCompleter {
     public CmdExecutor(Plugin plugin) {
         this.plugin = plugin;
         this.commands = new LinkedHashMap();
+        this.commands.put("info", new InfoCommand(plugin));
         this.commands.put("list", new ListMobCommand(plugin));
         this.commands.put("creeper", new MobCommand("creeper", "Enables/disables creepers exploding blocks.", plugin));
         this.commands.put("zombie", new MobCommand("zombie", "Enables/disables zombies from breaking doors.", plugin));
@@ -84,8 +85,6 @@ public class CmdExecutor implements CommandExecutor, TabCompleter {
 
     private void SendInfoToPlayer(Player player) {
         player.sendMessage(Messages.longPrefixStart);
-        player.sendMessage(ChatColor.GRAY + "Plugin made by: " + ChatColor.GOLD + "PinkNeonDinosaur");
-        player.sendMessage(ChatColor.GRAY + "This plugin can be used to enable/disable griefing " + "done by certain mobs, without having to set the doMobGriefing gamerule to true.");
         player.sendMessage(ChatColor.GRAY + "Below is a list of all commands you can use:");
         player.sendMessage(ChatColor.GOLD + "/nmg: " + ChatColor.WHITE + "Shows help and info about this plugin.");
         Iterator var2 = this.commands.values().iterator();

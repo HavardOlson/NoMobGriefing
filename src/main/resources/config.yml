@@ -1,9 +1,9 @@
 mob:
-  creeper: true
-  zombie: true
+  creeper: false
+  zombie: false
   enderman: false
-  snowgolem: true
-  ghast: true
-  wither: true
-  enderdragon: true
-  tnt: true
+  snowgolem: false
+  ghast: false
+  wither: false
+  enderdragon: false
+  tnt: false
